@@ -5,6 +5,8 @@ json.products @products do |product|
   json.product_description product.product_description
   json.price product.price
   json.quantity product.quantity
+  json.created_at product.created_at
+  json.updated_at product.updated_at
   json.machine product.machine
   json.city product.city
 end
