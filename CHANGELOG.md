@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.2...v0.1.3) (2021-07-04)
+
+
+### Bug Fixes
+
+* 🐛 fix validate_jwt_token func ([cb5313c](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/cb5313cd966e26b84706558504e03addf471850d))
+
 ### [0.1.2](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.1...v0.1.2) (2021-07-04)
 
 
