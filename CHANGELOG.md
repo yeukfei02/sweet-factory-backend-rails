@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.1...v0.1.2) (2021-07-04)
+
+
+### Features
+
+* 🎸 add foreign key to table ([567e0b4](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/567e0b4cb76d23cb856bc1d2a977ee973506d44b))
+
+
+### Bug Fixes
+
+* 🐛 add .idea to .gitignore ([43f6314](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/43f63148199ae42d6663779d54ac795b7bef3c18))
+
 ### 0.1.1 (2021-07-03)
 
 
