@@ -27,14 +27,14 @@ class AuthApiController < ApplicationController
         }
         render json: data, status: 400
       end
-    end
-  rescue => e
-    puts "error = #{e}"
+    rescue => e
+      puts "error = #{e}"
 
-    data = {
-      'message': 'Unauthorized, validate_jwt_token error',
-      'error': e.message.to_s
-    }
-    render json: data, status: 400
+      data = {
+        'message': 'Unauthorized, validate_jwt_token error',
+        'error': e.message.to_s
+      }
+      render json: data, status: 400
+    end
   end
 end
