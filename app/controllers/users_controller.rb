@@ -41,6 +41,7 @@ class UsersController < ApplicationController
           @token = UsersHelper.get_jwt_token(email)
 
           @message = 'login'
+          @user_id = user.id
           render :login, status: 200
         else
           @message = 'login error, wrong password'
