@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.3...v0.1.4) (2021-10-12)
+
+
+### Features
+
+* 🎸 add annotate lib ([602b055](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/602b0559941fd1cc218103f4106bf849080faf83))
+
+
+### Bug Fixes
+
+* 🐛 add userid in login api ([3da81da](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/3da81da50eb9281dcde877fd333d673e0cb32d49))
+* 🐛 update schema.rb ([d8f0b61](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/d8f0b61323c3c51cbf19d7740f1b60a4eb3d8885))
+
 ### [0.1.3](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.2...v0.1.3) (2021-07-04)
 
 
