@@ -19,6 +19,8 @@ gem 'solargraph', '~> 0.40.4'
 gem 'rubocop', '~> 1.12.0'
 # classes, modules and methods and reports any code smells it finds
 gem 'reek', '~> 6.0.3'
+# generate model schema in comment
+gem "annotate", "~> 3.1"
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
