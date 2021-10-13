@@ -17,7 +17,7 @@
 #
 #  fk_rails_...  (zone_id => zones.id)
 #
-require "test_helper"
+require 'test_helper'
 
 class CityTest < ActiveSupport::TestCase
   # test "the truth" do

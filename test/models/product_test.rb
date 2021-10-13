@@ -22,7 +22,7 @@
 #  fk_rails_...  (city_id => cities.id)
 #  fk_rails_...  (machine_id => machines.id)
 #
-require "test_helper"
+require 'test_helper'
 
 class ProductTest < ActiveSupport::TestCase
   # test "the truth" do
