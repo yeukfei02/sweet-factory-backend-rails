@@ -13,12 +13,6 @@ gem 'dotenv-rails', '~> 2.7'
 gem 'bcrypt', '~> 3.1.16'
 # Use jwt for token
 gem 'jwt', '~> 2.2.2'
-# IDE tools for code completion, inline documentation, and static analysis
-gem 'solargraph', '~> 0.40.4'
-# code style checking and code formatting tool
-gem 'rubocop', '~> 1.12.0'
-# classes, modules and methods and reports any code smells it finds
-gem 'reek', '~> 6.0.3'
 # generate model schema in comment
 gem 'annotate', '~> 3.1'
 # Use Puma as the app server
@@ -41,6 +35,12 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
+  # IDE tools for code completion, inline documentation, and static analysis
+  gem 'solargraph', '~> 0.40.4'
+  # code style checking and code formatting tool
+  gem 'rubocop', '~> 1.12.0'
+  # classes, modules and methods and reports any code smells it finds
+  gem 'reek', '~> 6.0.3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 end
