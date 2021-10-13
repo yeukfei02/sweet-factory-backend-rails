@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.5...v0.1.6) (2021-10-13)
+
+
+### Features
+
+* 🎸 add pronto github actions ([7afdf94](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/7afdf94c70cb2bfc98c851c129bafa1049c27c39))
+* 🎸 add pronto, brakeman, fasterer lib ([cff3177](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/cff31778a9787f74ceb77e8f95c7ec68ae602022))
+
+
+### Bug Fixes
+
+* 🐛 fix Gemfile ([28a4018](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/28a40181234b5e94f8dc281ee8599faa63052be4))
+* 🐛 update pronto.yml ruby version ([7880c91](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/7880c919929a678443c1c0f12e76ae41eefe28c1))
+
 ### [0.1.5](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.4...v0.1.5) (2021-10-13)
 
 
