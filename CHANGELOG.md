@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.4...v0.1.5) (2021-10-13)
+
+
+### Bug Fixes
+
+* 🐛 add rubocop and reek for lint and format ([ac0f105](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/ac0f10529cfdd6ce787f5cbd78012bb88d523497))
+* 🐛 move lib to dev and test ([2fb52fb](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/2fb52fb5c3a8f56492ccffc86a58dca9fc3dfacb))
+
 ### [0.1.4](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.3...v0.1.4) (2021-10-12)
 
 
