@@ -17,7 +17,7 @@
 #
 #  fk_rails_...  (city_id => cities.id)
 #
-require "test_helper"
+require 'test_helper'
 
 class MachineTest < ActiveSupport::TestCase
   # test "the truth" do
