@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.7](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.6...v0.1.7) (2021-10-18)
+
+
+### Features
+
+* 🎸 add pronto-rails_best_practices lib ([518f945](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/518f945d9a174d96816a76db3dddca2318842c12))
+
+
+### Bug Fixes
+
+* 🐛 update Gemfile.lock for heroku ([1bba2bb](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/1bba2bb607fdc684a52c5cf53b8e4fb8d169575d))
+
 ### [0.1.6](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.5...v0.1.6) (2021-10-13)
 
 
