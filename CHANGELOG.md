@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.8](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.7...v0.1.8) (2021-10-20)
+
+
+### Features
+
+* 🎸 add rspec-rails and factory_bot lib ([c320b3d](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/c320b3d56e39a5df2e8165ade17497d9ab695e5f))
+
 ### [0.1.7](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.6...v0.1.7) (2021-10-18)
 
 
