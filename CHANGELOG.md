@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.9](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.8...v0.1.9) (2021-10-27)
+
+
+### Features
+
+* 🎸 add rack-cors lib ([e687dba](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/e687dba5ae7d51a0526532c4c8e26b0fe73dfd8f))
+
 ### [0.1.8](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.7...v0.1.8) (2021-10-20)
 
 
