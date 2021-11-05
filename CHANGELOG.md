@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.10](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.9...v0.1.10) (2021-11-05)
+
+
+### Bug Fixes
+
+* 🐛 update .ruby-version ([6973e44](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/6973e4406430aead9b6d31a4286e541f7c7ec4f9))
+* 🐛 update cors ([b2423d5](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/b2423d5864ec8c561a08090e5a2d28c01c0c70f2))
+* 🐛 update database.yml ([e4a73bf](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/e4a73bf2e7d881ee309cc6462266a616a00347d3))
+
 ### [0.1.9](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.8...v0.1.9) (2021-10-27)
 
 
