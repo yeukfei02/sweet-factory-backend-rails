@@ -9,40 +9,40 @@ class MachinesController < AuthApiController
 
     if machine.present?
       @message = 'createMachines'
-      render :create_machines, status: 200
+      render :create_machines, status: :ok
     else
       @message = 'createMachines error'
-      render :create_machines, status: 400
+      render :create_machines, status: :bad_request
     end
   rescue StandardError => e
     puts "error = #{e}"
 
     @message = 'createMachines error'
     @error = e.message.to_s
-    render :create_machines, status: 400
+    render :create_machines, status: :bad_request
   end
 
   def get_machines
     @message = 'getMachines'
     @machines = Machine.all
-    render :get_machines, status: 200
+    render :get_machines, status: :ok
   rescue StandardError => e
     puts "error = #{e}"
 
     @message = 'getMachines error'
     @error = e.message.to_s
-    render :get_machines, status: 400
+    render :get_machines, status: :bad_request
   end
 
   def get_machine_by_id
     @message = 'getMachineById'
     @machine = Machine.find(params[:id])
-    render :get_machine_by_id, status: 200
+    render :get_machine_by_id, status: :ok
   rescue StandardError => e
     puts "error = #{e}"
 
     @message = 'getMachineById error'
     @error = e.message.to_s
-    render :get_machine_by_id, status: 400
+    render :get_machine_by_id, status: :bad_request
   end
 end

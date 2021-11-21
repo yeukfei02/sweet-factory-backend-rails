@@ -12,17 +12,17 @@ class UsersController < ApplicationController
 
     if user.present?
       @message = 'signup'
-      render :signup, status: 200
+      render :signup, status: :ok
     else
       @message = 'signup error'
-      render :signup, status: 400
+      render :signup, status: :bad_request
     end
   rescue StandardError => e
     puts "error = #{e}"
 
     @message = 'signup error'
     @error = e.message.to_s
-    render :signup, status: 400
+    render :signup, status: :bad_request
   end
 
   def login
@@ -39,44 +39,44 @@ class UsersController < ApplicationController
 
         @message = 'login'
         @user_id = user.id
-        render :login, status: 200
+        render :login, status: :ok
       else
         @message = 'login error, wrong password'
-        render :login, status: 400
+        render :login, status: :bad_request
       end
     else
       @message = 'login error'
-      render :login, status: 400
+      render :login, status: :bad_request
     end
   rescue StandardError => e
     puts "error = #{e}"
 
     @message = 'login error'
     @error = e.message.to_s
-    render :login, status: 400
+    render :login, status: :bad_request
   end
 
   def get_users
     @message = 'getUsers'
     @users = User.all
-    render :get_users, status: 200
+    render :get_users, status: :ok
   rescue StandardError => e
     puts "error = #{e}"
 
     @message = 'getUsers error'
     @error = e.message.to_s
-    render :get_users, status: 400
+    render :get_users, status: :bad_request
   end
 
   def get_user_by_id
     @message = 'getUserById'
     @user = User.find(params[:id])
-    render :get_user_by_id, status: 200
+    render :get_user_by_id, status: :ok
   rescue StandardError => e
     puts "error = #{e}"
 
     @message = 'getUserById error'
     @error = e.message.to_s
-    render :get_user_by_id, status: 400
+    render :get_user_by_id, status: :bad_request
   end
 end
