@@ -31,6 +31,9 @@ group :development, :test do
   gem 'rexml', '~> 3.2'
   gem 'rspec-rails', '~> 5.0'
   gem 'rubocop', '~> 1.12.0'
+  gem 'rubocop-performance', '~> 1.12'
+  gem 'rubocop-rails', '~> 2.12'
+  gem 'rubocop-rspec', '~> 2.4'
   gem 'solargraph', '~> 0.40.4'
   gem 'thor', '~> 1.1'
 end

@@ -9,40 +9,40 @@ class CitiesController < AuthApiController
 
     if city.present?
       @message = 'createCities'
-      render :create_cities, status: 200
+      render :create_cities, status: :ok
     else
       @message = 'createCities error'
-      render :create_cities, status: 400
+      render :create_cities, status: :bad_request
     end
   rescue StandardError => e
     puts "error = #{e}"
 
     @message = 'createCities error'
     @error = e.message.to_s
-    render :create_cities, status: 400
+    render :create_cities, status: :bad_request
   end
 
   def get_cities
     @message = 'getCities'
     @cities = City.all
-    render :get_cities, status: 200
+    render :get_cities, status: :ok
   rescue StandardError => e
     puts "error = #{e}"
 
     @message = 'getCities error'
     @error = e.message.to_s
-    render :get_cities, status: 400
+    render :get_cities, status: :bad_request
   end
 
   def get_city_by_id
     @message = 'getCityById'
     @city = City.find(params[:id])
-    render :get_city_by_id, status: 200
+    render :get_city_by_id, status: :ok
   rescue StandardError => e
     puts "error = #{e}"
 
     @message = 'getCityById error'
     @error = e.message.to_s
-    render :get_city_by_id, status: 400
+    render :get_city_by_id, status: :bad_request
   end
 end

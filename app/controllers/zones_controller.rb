@@ -7,40 +7,40 @@ class ZonesController < AuthApiController
 
     if zone.present?
       @message = 'createZones'
-      render :create_zones, status: 200
+      render :create_zones, status: :ok
     else
       @message = 'createZones error'
-      render :create_zones, status: 400
+      render :create_zones, status: :bad_request
     end
   rescue StandardError => e
     puts "error = #{e}"
 
     @message = 'createZones error'
     @error = e.message.to_s
-    render :create_zones, status: 400
+    render :create_zones, status: :bad_request
   end
 
   def get_zones
     @message = 'getZones'
     @zones = Zone.all
-    render :get_zones, status: 200
+    render :get_zones, status: :ok
   rescue StandardError => e
     puts "error = #{e}"
 
     @message = 'getZones error'
     @error = e.message.to_s
-    render :get_zones, status: 400
+    render :get_zones, status: :bad_request
   end
 
   def get_zone_by_id
     @message = 'getZoneById'
     @zone = Zone.find(params[:id])
-    render :get_zone_by_id, status: 200
+    render :get_zone_by_id, status: :ok
   rescue StandardError => e
     puts "error = #{e}"
 
     @message = 'getZoneById error'
     @error = e.message.to_s
-    render :get_zone_by_id, status: 400
+    render :get_zone_by_id, status: :bad_request
   end
 end
