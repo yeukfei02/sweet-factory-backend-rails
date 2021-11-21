@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.12](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.11...v0.1.12) (2021-11-21)
+
+
+### Features
+
+* 🎸 add .rubocop.yml and fix rubocop auto correct ([63b02fb](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/63b02fbd3730fb749063d7fcc86c04291c28db4e))
+* 🎸 add semgrep.yml ([ea85321](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/ea853215ab0e6217d31fcfe3c8b2748d0827d0b9))
+
+
+### Bug Fixes
+
+* 🐛 add protect_from_forgery ([e18d4a0](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/e18d4a0ddf1e5747ea0d604776ff0cd1ac1b3967))
+* 🐛 fix pronto.yml ([ce533fb](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/ce533fb2d47e6a28d2e365927b8359cb80cc51ed))
+* 🐛 update rails_helper ([43a4e3e](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/43a4e3e01df12ff15a8254125968e54855b686e4))
+
 ### [0.1.11](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.10...v0.1.11) (2021-11-05)
 
 
