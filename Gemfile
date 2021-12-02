@@ -9,6 +9,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'dotenv-rails', '~> 2.7'
 gem 'jbuilder', '~> 2.7'
 gem 'jwt', '~> 2.2.2'
+gem 'lograge', '~> 0.11.2'
 gem 'mysql2', '~> 0.5.3'
 gem 'puma', '~> 5.0'
 gem 'rack-cors', '~> 1.1'
