@@ -1,0 +1,36 @@
+version: '3.7'
+
+services:
+  web:
+    container_name: sweet-factory-backend-rails
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - 3000:3000
+    restart: always
+    environment:
+      - RAILS_ENV=production
+    depends_on:
+      - db
+      - redis
+
+  db:
+    container_name: postgres
+    image: postgres:12.8
+    ports:
+      - 5432:5432
+    restart: always
+    environment:
+      POSTGRES_USER: sweet_factory_backend_rails
+      POSTGRES_PASSWORD: sweet_factory_backend_rails
+      POSTGRES_DB: sweet_factory_backend_rails
+
+#  redis:
+#    container_name: redis
+#    image: redis:6.2
+#    ports:
+#      - 6379:6379
+#    restart: always
