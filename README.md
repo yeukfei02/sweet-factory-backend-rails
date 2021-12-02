@@ -50,6 +50,9 @@ $ rubocop --auto-correct
 // reek
 $ reek
 
+// generate schema info in model
+$ annotate --models
+
 // audit Gemfile.lock
 $ bundler-audit
 ```
