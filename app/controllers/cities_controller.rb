@@ -1,11 +1,13 @@
 class CitiesController < AuthApiController
   def create_cities
-    request_body = JSON.parse(request.raw_post)
-    city_name = request_body['city_name']
-    area = request_body['area']
-    zone_id = request_body['zone_id']
+    params.require(%i[city_name area zone_id user_id])
 
-    city = City.create(city_name: city_name, area: area, zone_id: zone_id)
+    city_name = params['city_name']
+    area = params['area']
+    zone_id = params['zone_id']
+    user_id = params['user_id']
+
+    city = City.create(city_name: city_name, area: area, zone_id: zone_id, user_id: user_id)
 
     if city.present?
       @message = 'createCities'

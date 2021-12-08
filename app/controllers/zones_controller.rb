@@ -1,9 +1,11 @@
 class ZonesController < AuthApiController
   def create_zones
-    request_body = JSON.parse(request.raw_post)
-    zone_name = request_body['zone_name']
+    params.require(%i[zone_name user_id])
 
-    zone = Zone.create(zone_name: zone_name)
+    zone_name = params['zone_name']
+    user_id = params['user_id']
+
+    zone = Zone.create(zone_name: zone_name, user_id: user_id)
 
     if zone.present?
       @message = 'createZones'
