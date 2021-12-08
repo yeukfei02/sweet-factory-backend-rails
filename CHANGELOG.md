@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.13](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.12...v0.1.13) (2021-12-08)
+
+
+### Features
+
+* 🎸 add awesome_print ([aecca3d](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/aecca3d8a52878e84c4f7ec246ddb5a6c7204cd1))
+* 🎸 add bundler-audit lib ([9acd599](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/9acd5997631072885ea2ea3535b73ce251613053))
+* 🎸 add dockerfile ([8228c38](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/8228c3805ca95b63983405ba56f55702752e4064))
+* 🎸 add lograge lib ([ca2ddf0](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/ca2ddf02a1aa4e3f53af029c8ce9f3374ed148a0))
+* 🎸 add user_id and other foreign key ([ac3bc89](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/ac3bc89f4de78ef80d9eeae9b55b7a81bef1d0a9))
+* 🎸 add user_id in get list api ([e3e8fe8](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/e3e8fe899d367bb01454bd03485c7711c9808fb3))
+
+
+### Bug Fixes
+
+* 🐛 fix timezone ([cbdddf4](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/cbdddf4ebaad1f65a59922ce856d10099c73e247))
+
 ### [0.1.12](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.11...v0.1.12) (2021-11-21)
 
 
