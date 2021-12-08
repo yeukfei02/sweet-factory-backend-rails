@@ -2,6 +2,8 @@ class UsersController < ApplicationController
   include UsersHelper
 
   def signup
+    params.require(%i[email password])
+
     request_body = JSON.parse(request.raw_post)
     email = request_body['email']
     password = request_body['password']
@@ -26,6 +28,8 @@ class UsersController < ApplicationController
   end
 
   def login
+    params.require(%i[email password])
+
     request_body = JSON.parse(request.raw_post)
     email = request_body['email']
     password = request_body['password']

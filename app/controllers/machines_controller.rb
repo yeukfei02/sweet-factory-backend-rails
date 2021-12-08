@@ -1,11 +1,14 @@
 class MachinesController < AuthApiController
   def create_machines
-    request_body = JSON.parse(request.raw_post)
-    machine_name = request_body['machine_name']
-    serial_number = request_body['serial_number']
-    city_id = request_body['city_id']
+    params.require(%i[machine_name serial_number city_id user_id])
 
-    machine = Machine.create(machine_name: machine_name, serial_number: serial_number, city_id: city_id)
+    machine_name = params['machine_name']
+    serial_number = params['serial_number']
+    city_id = params['city_id']
+    user_id = params['user_id']
+
+    machine = Machine.create(machine_name: machine_name, serial_number: serial_number, city_id: city_id,
+                             user_id: user_id)
 
     if machine.present?
       @message = 'createMachines'
