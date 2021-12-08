@@ -26,8 +26,12 @@ class MachinesController < AuthApiController
   end
 
   def get_machines
+    params.require(:user_id)
+
+    user_id = params[:user_id]
+
     @message = 'getMachines'
-    @machines = Machine.all
+    @machines = Machine.where(user_id: user_id)
     render :get_machines, status: :ok
   rescue StandardError => e
     puts "error = #{e}"

@@ -25,8 +25,12 @@ class CitiesController < AuthApiController
   end
 
   def get_cities
+    params.require(:user_id)
+
+    user_id = params[:user_id]
+
     @message = 'getCities'
-    @cities = City.all
+    @cities = City.where(user_id: user_id)
     render :get_cities, status: :ok
   rescue StandardError => e
     puts "error = #{e}"
