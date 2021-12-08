@@ -23,8 +23,12 @@ class ZonesController < AuthApiController
   end
 
   def get_zones
+    params.require(:user_id)
+
+    user_id = params[:user_id]
+
     @message = 'getZones'
-    @zones = Zone.all
+    @zones = Zone.where(user_id: user_id)
     render :get_zones, status: :ok
   rescue StandardError => e
     puts "error = #{e}"

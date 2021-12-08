@@ -36,8 +36,12 @@ class ProductsController < AuthApiController
   end
 
   def get_products
+    params.require(:user_id)
+
+    user_id = params[:user_id]
+
     @message = 'getProducts'
-    @products = Product.all
+    @products = Product.where(user_id: user_id)
     render :get_products, status: :ok
   rescue StandardError => e
     puts "error = #{e}"
