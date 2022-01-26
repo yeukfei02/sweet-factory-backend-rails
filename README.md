@@ -44,6 +44,9 @@ $ rails db:rollback
 // list routes
 $ rails routes
 
+// run test case
+$ bundle exec rspec
+
 // rubocop
 $ rubocop --auto-correct
 
