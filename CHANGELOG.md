@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.13...v0.2.0) (2022-01-26)
+
+
+### Features
+
+* 🎸 add shoulda-matchers ([e994ee8](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/e994ee8b48083359c93340af7bc70b8a7557f545))
+
 ### [0.1.13](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.12...v0.1.13) (2021-12-08)
 
 
