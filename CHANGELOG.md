@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.2.0...v0.2.1) (2022-02-10)
+
+
+### Features
+
+* 🎸 add model spec ([6c0ec69](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/6c0ec69702bbabf4fd064756ed387ecbb46c370a))
+* 🎸 create factories ([2baf05a](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/2baf05aaa7a448af487065a4de7b64546acdc518))
+
 ## [0.2.0](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.1.13...v0.2.0) (2022-01-26)
 
 
