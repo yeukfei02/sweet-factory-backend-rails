@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.2.1...v0.2.2) (2022-02-24)
+
+
+### Bug Fixes
+
+* 🐛 add index ([12fec50](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/12fec50b9e247e4fc82139cbb80b3618bfe80dbf))
+* 🐛 fix test case ([64cde7d](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/64cde7d162144c5631bfaf21dcf4b544fdaed699))
+
 ### [0.2.1](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.2.0...v0.2.1) (2022-02-10)
 
 
