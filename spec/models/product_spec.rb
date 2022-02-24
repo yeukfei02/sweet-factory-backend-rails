@@ -15,9 +15,15 @@
 #
 # Indexes
 #
-#  fk_rails_391685e1f6  (city_id)
-#  fk_rails_87758910ea  (machine_id)
-#  fk_rails_dee2631783  (user_id)
+#  index_products_on_city_id              (city_id)
+#  index_products_on_created_at           (created_at)
+#  index_products_on_machine_id           (machine_id)
+#  index_products_on_price                (price)
+#  index_products_on_product_description  (product_description)
+#  index_products_on_product_name         (product_name)
+#  index_products_on_quantity             (quantity)
+#  index_products_on_updated_at           (updated_at)
+#  index_products_on_user_id              (user_id)
 #
 # Foreign Keys
 #
@@ -45,6 +51,6 @@ RSpec.describe Product, type: :model do
     it { is_expected.to validate_presence_of(:price) }
 
     it { is_expected.to validate_presence_of(:quantity) }
-    it { is_expected.to validate_numericality_of(:price).only_integer }
+    it { is_expected.to validate_numericality_of(:quantity).only_integer }
   end
 end

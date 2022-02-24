@@ -12,8 +12,12 @@
 #
 # Indexes
 #
-#  fk_rails_d74b7fc4ce  (city_id)
-#  fk_rails_f7c8eaf040  (user_id)
+#  index_machines_on_city_id        (city_id)
+#  index_machines_on_created_at     (created_at)
+#  index_machines_on_machine_name   (machine_name)
+#  index_machines_on_serial_number  (serial_number)
+#  index_machines_on_updated_at     (updated_at)
+#  index_machines_on_user_id        (user_id)
 #
 # Foreign Keys
 #

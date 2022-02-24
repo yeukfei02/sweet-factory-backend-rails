@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_08_064630) do
+ActiveRecord::Schema.define(version: 2022_02_24_065459) do
 
   create_table "cities", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "city_name"
@@ -19,8 +19,12 @@ ActiveRecord::Schema.define(version: 2021_12_08_064630) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id"
-    t.index ["user_id"], name: "fk_rails_34332fe7ca"
-    t.index ["zone_id"], name: "fk_rails_f8d2792419"
+    t.index ["area"], name: "index_cities_on_area"
+    t.index ["city_name"], name: "index_cities_on_city_name"
+    t.index ["created_at"], name: "index_cities_on_created_at"
+    t.index ["updated_at"], name: "index_cities_on_updated_at"
+    t.index ["user_id"], name: "index_cities_on_user_id"
+    t.index ["zone_id"], name: "index_cities_on_zone_id"
   end
 
   create_table "machines", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -30,8 +34,12 @@ ActiveRecord::Schema.define(version: 2021_12_08_064630) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id"
-    t.index ["city_id"], name: "fk_rails_d74b7fc4ce"
-    t.index ["user_id"], name: "fk_rails_f7c8eaf040"
+    t.index ["city_id"], name: "index_machines_on_city_id"
+    t.index ["created_at"], name: "index_machines_on_created_at"
+    t.index ["machine_name"], name: "index_machines_on_machine_name"
+    t.index ["serial_number"], name: "index_machines_on_serial_number"
+    t.index ["updated_at"], name: "index_machines_on_updated_at"
+    t.index ["user_id"], name: "index_machines_on_user_id"
   end
 
   create_table "products", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -44,9 +52,15 @@ ActiveRecord::Schema.define(version: 2021_12_08_064630) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id"
-    t.index ["city_id"], name: "fk_rails_391685e1f6"
-    t.index ["machine_id"], name: "fk_rails_87758910ea"
-    t.index ["user_id"], name: "fk_rails_dee2631783"
+    t.index ["city_id"], name: "index_products_on_city_id"
+    t.index ["created_at"], name: "index_products_on_created_at"
+    t.index ["machine_id"], name: "index_products_on_machine_id"
+    t.index ["price"], name: "index_products_on_price"
+    t.index ["product_description"], name: "index_products_on_product_description"
+    t.index ["product_name"], name: "index_products_on_product_name"
+    t.index ["quantity"], name: "index_products_on_quantity"
+    t.index ["updated_at"], name: "index_products_on_updated_at"
+    t.index ["user_id"], name: "index_products_on_user_id"
   end
 
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -54,6 +68,10 @@ ActiveRecord::Schema.define(version: 2021_12_08_064630) do
     t.string "password"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["created_at"], name: "index_users_on_created_at"
+    t.index ["email"], name: "index_users_on_email"
+    t.index ["password"], name: "index_users_on_password"
+    t.index ["updated_at"], name: "index_users_on_updated_at"
   end
 
   create_table "zones", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -61,7 +79,10 @@ ActiveRecord::Schema.define(version: 2021_12_08_064630) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id"
-    t.index ["user_id"], name: "fk_rails_36b0b64bdb"
+    t.index ["created_at"], name: "index_zones_on_created_at"
+    t.index ["updated_at"], name: "index_zones_on_updated_at"
+    t.index ["user_id"], name: "index_zones_on_user_id"
+    t.index ["zone_name"], name: "index_zones_on_zone_name"
   end
 
   add_foreign_key "cities", "users"
