@@ -10,7 +10,10 @@
 #
 # Indexes
 #
-#  fk_rails_36b0b64bdb  (user_id)
+#  index_zones_on_created_at  (created_at)
+#  index_zones_on_updated_at  (updated_at)
+#  index_zones_on_user_id     (user_id)
+#  index_zones_on_zone_name   (zone_name)
 #
 # Foreign Keys
 #

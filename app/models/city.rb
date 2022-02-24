@@ -12,8 +12,12 @@
 #
 # Indexes
 #
-#  fk_rails_34332fe7ca  (user_id)
-#  fk_rails_f8d2792419  (zone_id)
+#  index_cities_on_area        (area)
+#  index_cities_on_city_name   (city_name)
+#  index_cities_on_created_at  (created_at)
+#  index_cities_on_updated_at  (updated_at)
+#  index_cities_on_user_id     (user_id)
+#  index_cities_on_zone_id     (zone_id)
 #
 # Foreign Keys
 #
