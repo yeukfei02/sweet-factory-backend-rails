@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 json.message @message
 json.token @token if @token.present?
 json.user_id @user_id if @user_id.present?

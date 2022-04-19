@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 json.message @message
 json.machines @machines do |machine|
   json.id machine.id

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 json.message @message
 json.zones @zones do |zone|
   json.id zone.id
