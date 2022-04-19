@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ProductsController < AuthApiController
   def create_products
     params.require(%i[product_name product_description price quantity machine_id city_id user_id])
@@ -28,7 +30,7 @@ class ProductsController < AuthApiController
       render :create_products, status: :bad_request
     end
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'createProducts error'
     @error = e.message.to_s
@@ -44,7 +46,7 @@ class ProductsController < AuthApiController
     @products = Product.where(user_id: user_id)
     render :get_products, status: :ok
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'getProducts error'
     @error = e.message.to_s
@@ -56,7 +58,7 @@ class ProductsController < AuthApiController
     @product = Product.find(params[:id])
     render :get_product_by_id, status: :ok
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'getProductById error'
     @error = e.message.to_s

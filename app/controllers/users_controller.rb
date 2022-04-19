@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class UsersController < ApplicationController
   include UsersHelper
 
@@ -20,7 +22,7 @@ class UsersController < ApplicationController
       render :signup, status: :bad_request
     end
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'signup error'
     @error = e.message.to_s
@@ -53,7 +55,7 @@ class UsersController < ApplicationController
       render :login, status: :bad_request
     end
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'login error'
     @error = e.message.to_s
@@ -65,7 +67,7 @@ class UsersController < ApplicationController
     @users = User.all
     render :get_users, status: :ok
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'getUsers error'
     @error = e.message.to_s
@@ -77,7 +79,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     render :get_user_by_id, status: :ok
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'getUserById error'
     @error = e.message.to_s

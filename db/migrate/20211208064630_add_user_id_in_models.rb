@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddUserIdInModels < ActiveRecord::Migration[6.1]
   def change
     add_column :zones, :user_id, :bigint

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: machines
@@ -31,13 +33,13 @@ RSpec.describe Machine, type: :model do
     create(:machine)
   end
 
-  describe 'associations' do
+  context 'associations' do
     it { is_expected.to have_many(:products).class_name('Product') }
     it { is_expected.to belong_to(:city).class_name('City') }
     it { is_expected.to belong_to(:user).class_name('User') }
   end
 
-  describe 'validations' do
+  context 'validations' do
     it { is_expected.to validate_presence_of(:machine_name) }
     it { is_expected.to validate_presence_of(:serial_number) }
   end

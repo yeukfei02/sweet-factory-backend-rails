@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: users
@@ -22,14 +24,14 @@ RSpec.describe User, type: :model do
     create(:user)
   end
 
-  describe 'associations' do
+  context 'associations' do
     it { is_expected.to have_many(:zones).class_name('Zone') }
     it { is_expected.to have_many(:cities).class_name('City') }
     it { is_expected.to have_many(:machines).class_name('Machine') }
     it { is_expected.to have_many(:products).class_name('Product') }
   end
 
-  describe 'validations' do
+  context 'validations' do
     it { is_expected.to validate_presence_of(:email) }
     it { is_expected.to validate_presence_of(:password) }
   end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class MachinesController < AuthApiController
   def create_machines
     params.require(%i[machine_name serial_number city_id user_id])
@@ -18,7 +20,7 @@ class MachinesController < AuthApiController
       render :create_machines, status: :bad_request
     end
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'createMachines error'
     @error = e.message.to_s
@@ -34,7 +36,7 @@ class MachinesController < AuthApiController
     @machines = Machine.where(user_id: user_id)
     render :get_machines, status: :ok
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'getMachines error'
     @error = e.message.to_s
@@ -46,7 +48,7 @@ class MachinesController < AuthApiController
     @machine = Machine.find(params[:id])
     render :get_machine_by_id, status: :ok
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'getMachineById error'
     @error = e.message.to_s

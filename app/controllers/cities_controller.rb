@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CitiesController < AuthApiController
   def create_cities
     params.require(%i[city_name area zone_id user_id])
@@ -17,7 +19,7 @@ class CitiesController < AuthApiController
       render :create_cities, status: :bad_request
     end
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'createCities error'
     @error = e.message.to_s
@@ -33,7 +35,7 @@ class CitiesController < AuthApiController
     @cities = City.where(user_id: user_id)
     render :get_cities, status: :ok
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'getCities error'
     @error = e.message.to_s
@@ -45,7 +47,7 @@ class CitiesController < AuthApiController
     @city = City.find(params[:id])
     render :get_city_by_id, status: :ok
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'getCityById error'
     @error = e.message.to_s

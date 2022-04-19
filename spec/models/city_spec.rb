@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: cities
@@ -31,13 +33,13 @@ RSpec.describe City, type: :model do
     create(:city)
   end
 
-  describe 'associations' do
+  context 'associations' do
     it { is_expected.to have_many(:machines).class_name('Machine') }
     it { is_expected.to belong_to(:zone).class_name('Zone') }
     it { is_expected.to belong_to(:user).class_name('User') }
   end
 
-  describe 'validations' do
+  context 'validations' do
     it { is_expected.to validate_presence_of(:city_name) }
     it { is_expected.to validate_presence_of(:area) }
   end

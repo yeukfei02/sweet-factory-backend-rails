@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: products
@@ -38,13 +40,13 @@ RSpec.describe Product, type: :model do
     create(:product)
   end
 
-  describe 'associations' do
+  context 'associations' do
     it { is_expected.to belong_to(:machine).class_name('Machine') }
     it { is_expected.to belong_to(:city).class_name('City') }
     it { is_expected.to belong_to(:user).class_name('User') }
   end
 
-  describe 'validations' do
+  context 'validations' do
     it { is_expected.to validate_presence_of(:product_name) }
     it { is_expected.to validate_presence_of(:product_description) }
 

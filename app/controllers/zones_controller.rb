@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ZonesController < AuthApiController
   def create_zones
     params.require(%i[zone_name user_id])
@@ -15,7 +17,7 @@ class ZonesController < AuthApiController
       render :create_zones, status: :bad_request
     end
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'createZones error'
     @error = e.message.to_s
@@ -31,7 +33,7 @@ class ZonesController < AuthApiController
     @zones = Zone.where(user_id: user_id)
     render :get_zones, status: :ok
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'getZones error'
     @error = e.message.to_s
@@ -43,7 +45,7 @@ class ZonesController < AuthApiController
     @zone = Zone.find(params[:id])
     render :get_zone_by_id, status: :ok
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'getZoneById error'
     @error = e.message.to_s

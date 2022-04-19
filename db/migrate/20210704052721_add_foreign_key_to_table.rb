@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddForeignKeyToTable < ActiveRecord::Migration[6.1]
   def change
     change_column :cities, :zone_id, :bigint
