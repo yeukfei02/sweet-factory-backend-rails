@@ -8,7 +8,7 @@ api url: <https://sweet-factory-backend-rails.herokuapp.com/>
 
 ## Requirement
 
-- install ruby (v2.6.6)
+- install ruby (v2.7.6)
 - install gem
 - install bundle
 - install yarn
@@ -40,6 +40,9 @@ $ rails db:migrate
 
 // db rollback
 $ rails db:rollback
+
+// db reset
+$ rails db:migrate:reset
 
 // list routes
 $ rails routes
