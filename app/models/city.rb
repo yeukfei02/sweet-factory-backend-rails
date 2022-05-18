@@ -29,6 +29,7 @@
 class City < ApplicationRecord
   # association
   has_many :machines, dependent: :destroy
+  has_many :products, dependent: :destroy
   belongs_to :zone
   belongs_to :user
 
