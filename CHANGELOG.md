@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.5](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.2.4...v0.2.5) (2022-05-18)
+
+
+### Bug Fixes
+
+* 🐛 fix mysql2 lib and update model ([7d85f88](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/7d85f884cfe8f88d54eda013f80cbb3dcb1eee3e))
+
 ### [0.2.4](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.2.3...v0.2.4) (2022-05-18)
 
 
