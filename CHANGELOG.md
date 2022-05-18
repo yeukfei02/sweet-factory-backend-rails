@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.4](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.2.3...v0.2.4) (2022-05-18)
+
+
+### Bug Fixes
+
+* 🐛 update ruby version and readme.md ([39e777d](https://github.com/yeukfei02/sweet-factory-backend-rails/commit/39e777df28120462da919ed17cce39a8c52969bf))
+
 ### [0.2.3](https://github.com/yeukfei02/sweet-factory-backend-rails/compare/v0.2.2...v0.2.3) (2022-04-19)
 
 
