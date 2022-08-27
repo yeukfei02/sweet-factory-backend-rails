@@ -4,8 +4,6 @@ sweet-factory-backend-rails
 
 documentation: <https://documenter.getpostman.com/view/3827865/Tzm2JdWV>
 
-api url: <https://sweet-factory-backend-rails.herokuapp.com/>
-
 ## Requirement
 
 - install ruby (v2.7.6)
